@@ -1,0 +1,97 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title">Seguridad</h4>
+                        <p class="card-category">Modulo </p>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <mat-form-field class="example-full-width">
+                                      <input
+                                       matInput 
+                                       placeholder="Cod_mod " 
+                                       type="text" 
+                                       [value]="recordEdit.cod_mod"
+                                    (input)="onInputChange($event, 'cod_mod')"
+                                    [disabled]="voption == 'V' || voption == 'D' || voption == 'E'">
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-md-4">
+                                    <mat-form-field class="example-full-width">
+                                      <input matInput placeholder="Descripcion del Modulo" type="text"
+                                      [value]="recordEdit.dsc_mod"
+                                    (input)="onInputChange($event, 'dsc_mod')"
+                                    [disabled]="voption == 'V'">
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-md-4">
+                                    <mat-form-field class="example-full-width">
+                                      <input matInput placeholder="estado"type="text" 
+                                      [value]="recordEdit.estado"
+                                    (input)="onInputChange($event, 'estado')"
+                                    [disabled]="voption == 'V'">
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="usu_cre" 
+                                    [value]="recordEdit.usu_cre"
+                                    [disabled]="voption == 'V'">
+                                  </mat-form-field>
+                                </div>
+                                <div class="col-md-6">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="fh_cre" 
+                                    [value]="recordEdit.fh_cre"
+                                    [disabled]="voption == 'V'">
+                                  </mat-form-field>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="usu_mod" 
+                                    [value]="recordEdit.usu_mod"
+                                    [disabled]="voption == 'V'">
+                                  </mat-form-field>
+                                </div>
+                                <div class="col-md-6">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="fh_mod"
+                                    [value]="recordEdit.fh_mod"
+                                    [disabled]="voption == 'V'">
+
+                                  </mat-form-field>
+                                </div>
+
+                            </div>
+
+                            <button mat-raised-button 
+                            type="button"
+                            (click)="onSave()"
+                         class="btn btn-danger pull-right">Guardar</button>
+                         <button mat-raised-button 
+                            type="button"
+                            (click)="onReestrablecer()"
+                         class="btn btn-danger pull-right">Reestablecer</button>
+                         <button mat-raised-button 
+                            type="button"
+                            (click)="oncomBack()"
+                         class="btn btn-danger pull-right">Volver</button>
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+  </div>

@@ -1,0 +1,97 @@
+/*.mat-table {
+  height: calc( 100vh + 900px);
+  overflow: auto; 
+  width: 100%;
+}*/
+.margin-10 {
+    margin: 10px;
+  }
+  .full-heigth {
+    height: -moz-calc(100% - 64px);
+    height: -webkit-calc(100% - 64px);
+    height: calc(100% - 64px);
+  }
+  
+  .dialog-95 {
+    width: 95%;
+    height: auto;
+  }
+  
+  .inline-icon {
+    vertical-align: bottom;
+    font-size: 18px !important;
+  }
+  
+  .full-width {
+    width: 95%;
+    box-align: center;
+  }
+  .btn-flex-end {
+    justify-content: flex-end;
+  }
+  
+  .background-search {
+    background-color: white;
+  }
+  
+  .av2-container {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    min-width: 280px;
+  }
+  
+  .mat-table {
+    overflow: auto;
+    /*max-height: 500px;*/
+  }
+  
+  .mobile-label {
+    display: none;
+  }
+  
+  @media (max-width: 600px) {
+    .mobile-label {
+      width: 80px;
+      display: inline-block;
+      font-weight: bold;
+    }
+  
+    .mat-header-row {
+      display: none;
+    }
+  
+    .mat-row {
+      flex-direction: column;
+      align-items: start;
+      padding: 8px 24px;
+    }
+  }
+  mat-button-toggle-group {
+    flex-wrap: wrap;
+  }
+  .rpt-output {
+    margin: 15px 0;
+  }
+  
+  /* mat-editor should be applied to the container of contenteditable (<mat-form-field>)*/
+  .mat-editor .mat-form-field-wrapper,
+  .mat-editor .mat-form-field-infix {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  .mat-editor .mat-form-field-flex {
+    align-items: center;
+  }
+  
+  /* https://github.com/angular/material2/issues/13322 */
+  .mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .mat-icon-button,
+  .mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon-button {
+    display: inline-block !important;
+  }
+  .mat-editor .ck-content {
+    border: none !important;
+    box-shadow: none !important;
+  }
+  
